@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GameBoy Birthday</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <!-- canvas neon heart -->
+  <canvas id="canvas"></canvas>
+
+  <!-- GameBoy device -->
+  <div class="device">
+    <div class="top">
+      <div class="left-top"><div class="led"></div>POWER</div>
+      <div>Amad-BOY</div>
+    </div>
+
+    <div class="screen-frame">
+      <div class="screen">
+        Happy<br>Birthday!
+        <span>Press Start Button</span>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <div class="big-btn btn-blue" onclick="location.href='./html/message.html'">MESSAGE</div>
+      <div class="big-btn btn-red" onclick="location.href='html/gallery.html'">GALLERY</div>
+      <div class="big-btn btn-purple" onclick="location.href='./html/music.html'">MUSIC</div>
+      <div class="big-btn btn-green" onclick="location.href='./html/tetris.html'">TETRIS</div>
+    </div>
+
+    <div class="controls">
+      <div class="dpad">
+        <div class="up">▲</div>
+        <div class="down">▼</div>
+        <div class="left">◀</div>
+        <div class="right">▶</div>
+        <div class="center"></div>
+      </div>
+      <div class="ab">
+        <div class="circle-btn">B</div>
+        <div class="circle-btn">A</div>
+      </div>
+    </div>
+
+    <div class="small-controls">
+      <div class="small-btn">SELECT</div>
+      <div class="small-btn" onclick="location.href='./html/message.html'">START</div>
+    </div>
+  </div>
+
+<script src="./js/script.js"></script>
+  <script>initIndex();</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tetris Love</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tetris.css">
+</head>
+<body>
+  <!-- WebGL background -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Game -->
+  <div class="container">
+    <div class="title">Tetris</div>
+    <div class="stats">
+      <div>Score: <span id="score">0</span></div>
+      <div>Level: <span id="level">1</span></div>
+    </div>
+    <div class="stats" style="justify-content:flex-start;">Lines: <span id="lines">0</span></div>
+    <div id="board"></div>
+
+    <div class="controls">
+      <div class="ctrl-btn" id="leftBtn">◀</div>
+      <div class="ctrl-btn" id="rotateBtn">Rotate</div>
+      <div class="ctrl-btn" id="rightBtn">▶</div>
+    </div>
+
+    <div id="startBtn" class="btn green" onclick="startGame()">START GAME</div>
+    <a id="galaxyBtn" href="https://example.com" target="_blank" class="btn blue" style="display:none;">TOWARDS THE GALAXY</a>
+    <div class="btn red" onclick="window.location.href='../index.html'">KEMBALI</div>
+
+    <div id="overlay" class="overlay">
+      <div style="margin-bottom:10px;">GAME OVER!</div>
+      <div style="margin-bottom:10px;">Score: <span id="finalScore">0</span></div>
+      <div id="okOverlayBtn" class="btn green">OKE</div>
+    </div>
+  </div>
+
+  <div id="popup" class="popup">
+    <div style="color:#ff0; margin-bottom:10px;">Inget ya!</div>
+    <div style="margin-bottom:8px; color:#0f0;">"Walaupun kamu kalah di game tuh biasa. Yang penting kita masih menang di persahabatan ❤️"</div>
+    <div style="margin-bottom:8px; color:#0f0;">Hehe ^_^</div>
+    <div style="color:#ff69b4;">I love you ❤️</div>
+    <div id="okBtn" class="btn green" style="margin-top:10px;">OKE</div>
+  </div>
+
+<script src="../js/tetris.js"></script>
+</body>
+</html>

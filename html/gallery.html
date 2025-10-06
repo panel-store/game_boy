@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/gallery.css">
+
+</head>
+<body>
+  <!-- canvas neon heart -->
+  <canvas id="canvas"></canvas>
+
+  <div class="container">
+    <div class="title">Gallery</div>
+
+    <div class="photobox">
+      <div class="photobox-header">
+        <div class="led red"></div>
+        <div>HEYHTML PHOTOBOX</div>
+        <div class="led green"></div>
+      </div>
+      <div id="screen" class="photobox-screen">
+        Photobox siap digunakan
+        <div id="startBtn" class="btn btn-red">MULAI CETAK</div>
+      </div>
+    </div>
+
+    <div class="footer-btns">
+      <div id="nextBtn" class="btn btn-green btn-disabled">SELANJUTNYA</div>
+      <div id="backBtn" class="btn btn-red">KEMBALI</div>
+    </div>
+  </div>
+
+<script src="../js/script.js"></script>
+  <script>initGallery();</script>
+</body>
+</html>

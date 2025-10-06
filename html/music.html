@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Music Player</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/music.css">
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+
+  <div class="container">
+    <div class="title">Music Player</div>
+
+    <div class="cover-box">
+      <img id="coverImage" src="">
+    </div>
+
+    <div class="song-info">
+      <div id="songTitle" class="song-title"></div>
+      <div id="songArtist" class="song-artist"></div>
+    </div>
+
+    <div class="progress">
+      <span id="currentTime">0:00</span>
+      <input type="range" id="seekBar" value="0" min="0" max="100">
+      <span id="duration">0:00</span>
+    </div>
+
+    <div class="control-area">
+      <div class="ctrl-btn" id="prevBtn">⏮</div>
+      <div class="ctrl-btn" id="playPauseBtn">▶</div>
+      <div class="ctrl-btn" id="nextBtn">⏭</div>
+    </div>
+
+    <div class="volume-control">
+      <span>🔊</span>
+      <input type="range" id="volumeBar" value="50" min="0" max="100">
+    </div>
+
+    <div class="playlist">
+      <div class="playlist-title">PLAYLIST:</div>
+      <div id="playlist"></div>
+    </div>
+
+    <div class="footer-btns">
+      <div class="btn btn-green" onclick="window.location.href='../html/tetris.html'">SELANJUTNYA</div>
+      <div class="btn btn-red" onclick="window.location.href='../index.html'">KEMBALI</div>
+    </div>
+  </div>
+
+  <audio id="audioPlayer"></audio>
+
+<script src="../js/script.js"></script>
+  <script>initMusic();</script>
+</body>
+</html>

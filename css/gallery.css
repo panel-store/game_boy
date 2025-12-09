@@ -37,7 +37,7 @@
       flex-direction: column;
       z-index: 1; /* di atas canvas */
       max-height: 100vh;
-      overflow-y: visible;
+      overflow-y: auto;
     }
 
     .title {
